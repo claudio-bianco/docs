@@ -4,7 +4,7 @@ Este repositório contém um projeto desenvolvido utilizando Laravel, Docker e R
 
 ## Pré-requisitos
 
-Antes de começar, verifique se você possui as seguintes ferramentas instaladas em sua máquina:
+Antes de começar, [testeLink](lint/README.md) verifique se você possui as seguintes ferramentas instaladas em sua máquina:
 
 ✅ Docker
 ✅ Docker Compose
