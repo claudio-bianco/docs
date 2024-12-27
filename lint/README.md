@@ -1,17 +1,17 @@
-# 🚀 {Nome do Seu projeto}
+# {Nome do seu Projeto}
 
-Este repositório contém um projeto desenvolvido utilizando Laravel, Docker e React. A seguir, você encontrará um guia passo a passo interativo para abrir o projeto em seu ambiente local.
+Este repositório contém um projeto desenvolvido utilizando Node.js, React e TypeScript. Neste arquivo README, você encontrará um guia passo a passo para abrir o projeto em seu ambiente local.
 
 ## Pré-requisitos
 
 Antes de começar, verifique se você possui as seguintes ferramentas instaladas em sua máquina:
 
-✅ Docker
-✅ Docker Compose
+- Node.js (versão 12 ou superior)
+- npm (gerenciador de pacotes do Node.js)
 
-## Passo 1️⃣: Clonar o repositório
+## Passo 1: Clonar o repositório
 
-Comece clonando este repositório para sua máquina local. Para clonar o repositório, clique no botão "Clone" acima ou execute o seguinte comando no terminal:
+Comece clonando este repositório para sua máquina local. Abra o terminal e execute o seguinte comando:
 
 ```bash
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
@@ -19,35 +19,54 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
 Isso criará uma cópia local do repositório em seu ambiente.
 
-## Passo 2️⃣: Iniciar os contêineres Docker
+## Passo 2: Instalar dependências
 
-Navegue até o diretório raiz do projeto e execute o seguinte comando para iniciar os contêineres Docker:
+Navegue até o diretório raiz do projeto e execute o seguinte comando para instalar as dependências do Node.js:
 
 ```bash
-docker-compose up -d
+cd nome-do-repositorio
+npm install
 ```
 
-🐳 Isso iniciará os contêineres necessários para o projeto, incluindo o servidor Laravel e o cliente React.
+Esse comando irá ler o arquivo `package.json` e instalar todas as dependências necessárias para o projeto.
 
-## Passo 3️⃣: Acessar o servidor Laravel
+## Passo 3: Configurar variáveis de ambiente
 
-Após iniciar os contêineres, você pode acessar o servidor Laravel através do seu navegador no endereço [http://localhost:8000](http://localhost:8000).
+O projeto pode exigir algumas variáveis de ambiente para funcionar corretamente. Verifique se existe um arquivo `.env.example` no diretório raiz do projeto. Se existir, faça uma cópia desse arquivo e renomeie-o para `.env`. Em seguida, atualize as variáveis de ambiente de acordo com as configurações do seu ambiente local.
 
-## Passo 4️⃣: Acessar o cliente React
+## Passo 4: Iniciar o servidor
 
-Você também pode acessar o cliente React através do seu navegador no endereço [http://localhost:3000](http://localhost:3000).
+Para iniciar o servidor Node.js, execute o seguinte comando:
 
-## Passo 5️⃣: Modificar o projeto
+```bash
+npm start
+```
 
-Agora que você tem o projeto em execução, é possível fazer modificações no código conforme necessário. Sinta-se à vontade para explorar e adaptar o projeto de acordo com suas necessidades.
+Isso iniciará o servidor e você poderá acessá-lo através do seu navegador no endereço `http://localhost:3000`.
 
-## Passo 6️⃣: Publicar suas modificações
+## Passo 5: Iniciar o cliente React
+
+O projeto pode conter um diretório separado para o cliente React. Nesse caso, navegue até o diretório do cliente e execute o seguinte comando:
+
+```bash
+cd client
+npm install
+npm start
+```
+
+Isso iniciará o cliente React e você poderá acessá-lo através do seu navegador no endereço `http://localhost:3000`.
+
+## Passo 6: Modificar o projeto
+
+Agora que você tem o projeto em execução, você pode fazer modificações no código conforme necessário. Sinta-se à vontade para explorar e adaptar o projeto de acordo com suas necessidades.
+
+## Passo 7: Publicar suas modificações
 
 Se desejar publicar suas modificações em um repositório remoto no GitHub, siga estes passos:
 
-1️⃣ Crie um novo repositório vazio no GitHub.
-2️⃣ No terminal, navegue até o diretório raiz do projeto.
-3️⃣ Execute os seguintes comandos:
+1. Crie um novo repositório vazio no GitHub.
+2. No terminal, navegue até o diretório raiz do projeto.
+3. Execute os seguintes comandos:
 
 ```bash
 git remote set-url origin https://github.com/seu-usuario/nome-do-novo-repositorio.git
@@ -58,4 +77,4 @@ git push -u origin master
 
 Isso configurará o repositório remoto e enviará suas modificações para lá.
 
-🎉 Espero que este guia passo a passo tenha sido útil para você abrir e explorar o projeto utilizando Laravel, Docker e React. Sinta-se à vontade para adaptar as instruções de acordo com a estrutura do seu projeto específico. Divirta-se codificando! 😄
+---
