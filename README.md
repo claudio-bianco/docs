@@ -4,7 +4,7 @@ Este repositório contém um projeto desenvolvido utilizando Node.js, React e Ty
 
 ## Pré-requisitos
 
-Antes de começar, verifique se você possui as seguintes ferramentas instaladas em sua máquina:
+Antes de começar, verifique se você possui as seguintes ferramentas [clique aqui](lint/README.md#passo-4-iniciar-o-servidor) instaladas em sua máquina:
 
 - Node.js (versão 12 ou superior)
 - npm (gerenciador de pacotes do Node.js)
